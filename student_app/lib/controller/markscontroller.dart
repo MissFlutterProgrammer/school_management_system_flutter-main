@@ -46,13 +46,17 @@ class MarksController extends GetxController {
     }
   }
 
-  void onDropdownChangedSchoolyear(String value) {
+  void onDropdownChangedSchoolyear(
+    String value,
+  ) {
     if (schoolyear == value) return;
     schoolyear = value;
     update();
   }
 
-  void onDropdownChangedTerm(String value) {
+  void onDropdownChangedTerm(
+    String value,
+  ) {
     if (term == value) return;
     term = value;
     update();

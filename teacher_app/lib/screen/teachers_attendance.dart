@@ -46,15 +46,15 @@ class TeachersAttendance extends StatelessWidget {
                   //               const Color.fromRGBO(233, 238, 252, 1),
                   //           borderRadius: BorderRadius.circular(15),
                   //           items: controller.courseDropdownItems
-                  //               .map((String value) {
+                  //               .map((String value,) {
                   //             return DropdownMenuItem<String>(
                   //               value: value,
                   //               alignment: Alignment.center,
-                  //               child: Text(value),
+                  //               child: Text(value,),
                   //             );
                   //           }).toList(),
                   //           value: controller.courseSelectedValue,
-                  //           onChanged: (value) =>
+                  //           onChanged: (value,) =>
                   //               controller.onCourseDropdownChanged(value!),
                   //         ),
                   //       ),
@@ -95,7 +95,8 @@ class TeachersAttendance extends StatelessWidget {
                                     errorBuilder: (BuildContext context,
                                         Object object, StackTrace? stackTrace) {
                                       return Image.asset(
-                                          'assets/images/photo_2023-08-08_16-46-20.jpg');
+                                        'assets/images/photo_2023-08-08_16-46-20.jpg',
+                                      );
                                     },
                                   ),
                                 ),

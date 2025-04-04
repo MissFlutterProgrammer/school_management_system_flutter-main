@@ -7,7 +7,6 @@ import 'package:get_storage/get_storage.dart';
 import 'package:teacher_app/firebase_options.dart';
 import 'package:teacher_app/screen/login.dart';
 import 'package:teacher_app/services/test_firebase.dart';
-
 import '../constant/routes.dart';
 import '../bindings/init_bindings.dart';
 import '../themes/light_theme.dart';

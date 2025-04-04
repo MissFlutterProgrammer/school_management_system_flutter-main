@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/controller/teacher_report_controller.dart';
 import 'package:teacher_app/services/search_marks.dart';
-
 import '../constant/my_colors.dart';
 import '../model/students_model.dart';
 
@@ -19,12 +18,14 @@ class TeacherAlert extends StatelessWidget {
           title: const Text('Alert'),
           actions: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8),
               child: IconButton(
                 onPressed: () {
                   showSearch(
                     context: context,
-                    delegate: SearchMarks(searchTerms: controller.searchList),
+                    delegate: SearchMarks(
+                      searchTerms: controller.searchList,
+                    ),
                   );
                 },
                 icon: const Icon(
@@ -54,15 +55,21 @@ class TeacherAlert extends StatelessWidget {
                       underline: const Text(''),
                       dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                       borderRadius: BorderRadius.circular(15),
-                      items: controller.gradeDropdownItems.map((String value) {
+                      items: controller.gradeDropdownItems.map((
+                        String value,
+                      ) {
                         return DropdownMenuItem<String>(
                           value: value,
                           alignment: Alignment.center,
-                          child: Text(value),
+                          child: Text(
+                            value,
+                          ),
                         );
                       }).toList(),
                       value: controller.gradeSelectedValue,
-                      onChanged: (value) =>
+                      onChanged: (
+                        value,
+                      ) =>
                           controller.onGradeDropdownChanged(value!),
                     ),
                   ),
@@ -75,16 +82,21 @@ class TeacherAlert extends StatelessWidget {
                       underline: const Text(''),
                       dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                       borderRadius: BorderRadius.circular(15),
-                      items:
-                          controller.sectionDropdownItems.map((String value) {
+                      items: controller.sectionDropdownItems.map((
+                        String value,
+                      ) {
                         return DropdownMenuItem<String>(
                           value: value,
                           alignment: Alignment.center,
-                          child: Text(value),
+                          child: Text(
+                            value,
+                          ),
                         );
                       }).toList(),
                       value: controller.sectionSelectedValue,
-                      onChanged: (value) =>
+                      onChanged: (
+                        value,
+                      ) =>
                           controller.onSectionDropdownChanged(value!),
                     ),
                   ),
@@ -108,7 +120,8 @@ class TeacherAlert extends StatelessWidget {
                             errorBuilder: (BuildContext context, Object object,
                                 StackTrace? stackTrace) {
                               return Image.asset(
-                                  'assets/images/photo_2023-08-08_16-46-20.jpg');
+                                'assets/images/photo_2023-08-08_16-46-20.jpg',
+                              );
                             },
                           ),
                         ),
@@ -139,18 +152,20 @@ class TeacherAlert extends StatelessWidget {
                                       children: [
                                         Padding(
                                           padding: const EdgeInsets.symmetric(
-                                              horizontal: 8.0),
+                                              horizontal: 8),
                                           child: Row(
                                             children: [
                                               const Padding(
-                                                padding: EdgeInsets.all(8.0),
+                                                padding: EdgeInsets.all(8),
                                                 child: Text('Title'),
                                               ),
                                               Flexible(
                                                 child: TextFormField(
                                                   controller: sceondController
                                                       .titleController,
-                                                  validator: (value) {
+                                                  validator: (
+                                                    value,
+                                                  ) {
                                                     if (value == null ||
                                                         value.trim().isEmpty) {
                                                       return 'Title is required';
@@ -177,12 +192,14 @@ class TeacherAlert extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.symmetric(
-                                              horizontal: 8.0),
+                                              horizontal: 8),
                                           child: Flexible(
                                             child: TextFormField(
                                               controller: sceondController
                                                   .contentController,
-                                              validator: (value) {
+                                              validator: (
+                                                value,
+                                              ) {
                                                 if (value == null ||
                                                     value.trim().isEmpty) {
                                                   return 'Content is required';

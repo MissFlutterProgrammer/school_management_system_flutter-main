@@ -57,16 +57,21 @@ class StudentsAttendance extends StatelessWidget {
                             dropdownColor:
                                 const Color.fromRGBO(233, 238, 252, 1),
                             borderRadius: BorderRadius.circular(15),
-                            items: controller.gradeDropdownItems
-                                .map((String value) {
+                            items: controller.gradeDropdownItems.map((
+                              String value,
+                            ) {
                               return DropdownMenuItem<String>(
                                 value: value,
                                 alignment: Alignment.center,
-                                child: Text(value),
+                                child: Text(
+                                  value,
+                                ),
                               );
                             }).toList(),
                             value: controller.gradeSelectedValue,
-                            onChanged: (value) =>
+                            onChanged: (
+                              value,
+                            ) =>
                                 controller.onGradeDropdownChanged(value!),
                           ),
                         ),
@@ -80,16 +85,21 @@ class StudentsAttendance extends StatelessWidget {
                             dropdownColor:
                                 const Color.fromRGBO(233, 238, 252, 1),
                             borderRadius: BorderRadius.circular(15),
-                            items: controller.sectionDropdownItems
-                                .map((String value) {
+                            items: controller.sectionDropdownItems.map((
+                              String value,
+                            ) {
                               return DropdownMenuItem<String>(
                                 value: value,
                                 alignment: Alignment.center,
-                                child: Text(value),
+                                child: Text(
+                                  value,
+                                ),
                               );
                             }).toList(),
                             value: controller.sectionSelectedValue,
-                            onChanged: (value) =>
+                            onChanged: (
+                              value,
+                            ) =>
                                 controller.onSectionDropdownChanged(value!),
                           ),
                         ),
@@ -137,9 +147,10 @@ class StudentsAttendance extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              title: Text(item.name,
-                                  style:
-                                      Theme.of(context).textTheme.bodyMedium),
+                              title: Text(
+                                item.name,
+                                style: Theme.of(context).textTheme.bodyMedium,
+                              ),
                               subtitle: Text(
                                 'absence: ${item.numberOfDays}',
                               ),

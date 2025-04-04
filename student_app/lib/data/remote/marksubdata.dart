@@ -1,7 +1,5 @@
 import 'dart:developer';
-
 import 'package:student_app/applink.dart';
-
 import '../../core/crud.dart';
 
 class MarkSubFData {

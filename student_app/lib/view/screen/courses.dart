@@ -1,5 +1,6 @@
-import 'dart:developer';
+// ignore_for_file: use_super_parameters, deprecated_member_use
 
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

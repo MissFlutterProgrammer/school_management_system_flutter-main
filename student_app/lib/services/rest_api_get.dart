@@ -1,8 +1,8 @@
-import 'dart:convert';
+// ignore_for_file: avoid_print
 
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:student_app/models/program_model.dart';
-
 import '../models/assignments_model.dart';
 import '../models/show_post_model.dart';
 import '../models/totals_model.dart';

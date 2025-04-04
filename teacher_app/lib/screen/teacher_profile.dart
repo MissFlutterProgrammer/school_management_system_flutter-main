@@ -3,12 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/animation/fadeanimation.dart';
 import 'package:teacher_app/components/part_of_profile.dart';
-
 import '../constant/my_colors.dart';
 import '../controller/teacher_profile_controller.dart';
 
 class TeacherProfile extends StatelessWidget {
-  const TeacherProfile({Key? key}) : super(key: key);
+  const TeacherProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +75,8 @@ class TeacherProfile extends StatelessWidget {
                                   errorBuilder: (BuildContext context,
                                       Object object, StackTrace? stackTrace) {
                                     return Image.asset(
-                                        'assets/images/photo_2023-08-08_16-46-20.jpg');
+                                      'assets/images/photo_2023-08-08_16-46-20.jpg',
+                                    );
                                   },
                                 ),
                               ),
@@ -137,18 +137,20 @@ class TeacherProfile extends StatelessWidget {
                           delay: 1.3,
                           widgetChild: Flexible(
                             child: PartOfProfile(
-                                textInPart:
-                                    "${profileController.teacher.dateOfBirth}",
-                                textInTitle: "  Birthday  "),
+                              textInPart:
+                                  "${profileController.teacher.dateOfBirth}",
+                              textInTitle: "  Birthday  ",
+                            ),
                           ),
                         ),
                         FadeAnimation(
                           delay: 1.5,
                           widgetChild: Flexible(
                             child: PartOfProfile(
-                                textInPart:
-                                    "${profileController.teacher.phoneNumber}",
-                                textInTitle: " Phone  "),
+                              textInPart:
+                                  "${profileController.teacher.phoneNumber}",
+                              textInTitle: " Phone  ",
+                            ),
                           ),
                         ),
                       ],

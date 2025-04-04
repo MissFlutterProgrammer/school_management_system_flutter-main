@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:student_app/colors.dart';
@@ -9,14 +11,15 @@ class themes {
     primaryColor: Colors.blue,
     //Appbar
     appBarTheme: const AppBarTheme(
-        centerTitle: true,
-        color: Color.fromRGBO(65, 105, 225, 1),
-        titleTextStyle: TextStyle(
-          color: Colors.white,
-          fontFamily: 'Montserrat',
-          fontWeight: FontWeight.w400,
-          fontSize: 32,
-        )),
+      centerTitle: true,
+      color: Color.fromRGBO(65, 105, 225, 1),
+      titleTextStyle: TextStyle(
+        color: Colors.white,
+        fontFamily: 'Montserrat',
+        fontWeight: FontWeight.w400,
+        fontSize: 32,
+      ),
+    ),
     textTheme: TextTheme(
       displayLarge: TextStyle(
         color: const Color.fromRGBO(65, 105, 225, 1),

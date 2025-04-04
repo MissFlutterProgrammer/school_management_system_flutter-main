@@ -1,5 +1,6 @@
-import 'dart:developer';
+// ignore_for_file: deprecated_member_use, use_super_parameters
 
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -115,10 +116,11 @@ class Posts extends StatelessWidget {
                                           // "Physics Teacher",
                                           item.teacher!.course!.name!,
                                           style: TextStyle(
-                                              fontFamily: 'Montserrat',
-                                              color: Colors.grey,
-                                              fontSize: 11.sp,
-                                              fontWeight: FontWeight.w300),
+                                            fontFamily: 'Montserrat',
+                                            color: Colors.grey,
+                                            fontSize: 11.sp,
+                                            fontWeight: FontWeight.w300,
+                                          ),
                                         ),
                                       ),
                                     ],

@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+// ignore_for_file: public_member_api_docs, sort_constructors_first, use_super_parameters, deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -30,7 +30,10 @@ class CellWithShadow extends StatelessWidget {
             ),
           ],
         ),
-        child: Text(textInCell, style: Theme.of(context).textTheme.headlineMedium),
+        child: Text(
+          textInCell,
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
     );
   }

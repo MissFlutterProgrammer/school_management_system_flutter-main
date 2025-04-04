@@ -1,9 +1,9 @@
-// ignore: file_names
+// ignore_for_file: file_names
+
 class AssignModel {
   int? id;
   int? sectionId;
   int? teacherId;
-  // ignore: prefer_void_to_null
   Null gradeCourseId;
   String? title;
   String? content;
@@ -13,18 +13,19 @@ class AssignModel {
   String? updatedAt;
   Pivot? pivot;
 
-  AssignModel(
-      {this.id,
-      this.sectionId,
-      this.teacherId,
-      this.gradeCourseId,
-      this.title,
-      this.content,
-      this.dueDate,
-      this.type,
-      this.createdAt,
-      this.updatedAt,
-      this.pivot});
+  AssignModel({
+    this.id,
+    this.sectionId,
+    this.teacherId,
+    this.gradeCourseId,
+    this.title,
+    this.content,
+    this.dueDate,
+    this.type,
+    this.createdAt,
+    this.updatedAt,
+    this.pivot,
+  });
 
   AssignModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];

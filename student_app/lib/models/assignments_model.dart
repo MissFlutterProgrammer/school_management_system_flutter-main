@@ -37,15 +37,16 @@ class AssignmentsToShow {
   String? type;
   Pivot? pivot;
 
-  AssignmentsToShow(
-      {this.id,
-      this.sectionId,
-      this.teacherId,
-      this.title,
-      this.content,
-      this.dueDate,
-      this.type,
-      this.pivot});
+  AssignmentsToShow({
+    this.id,
+    this.sectionId,
+    this.teacherId,
+    this.title,
+    this.content,
+    this.dueDate,
+    this.type,
+    this.pivot,
+  });
 
   AssignmentsToShow.fromJson(Map<String, dynamic> json) {
     id = json['id'];

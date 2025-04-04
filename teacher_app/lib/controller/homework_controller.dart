@@ -1,11 +1,11 @@
-import 'dart:developer';
+// ignore_for_file: depend_on_referenced_packages
 
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:teacher_app/constant/days.dart';
 import 'package:teacher_app/constant/my_colors.dart';
-
 import '../model/grade_model.dart';
 import '../model/homework_section_model.dart';
 import '../model/sections_model.dart';
@@ -104,13 +104,17 @@ class HomeworkController extends GetxController {
     update();
   }
 
-  void onTypeDropdownChanged(String value) {
+  void onTypeDropdownChanged(
+    String value,
+  ) {
     if (typeSelectedValue == value) return;
     typeSelectedValue = value;
     update();
   }
 
-  void onGradeDropdownChanged(String value) {
+  void onGradeDropdownChanged(
+    String value,
+  ) {
     if (gradeSelectedValue == value) return;
     fetchSectionsData();
     gradeSelectedValue = value;

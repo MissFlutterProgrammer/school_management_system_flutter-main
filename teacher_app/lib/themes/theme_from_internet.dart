@@ -19,7 +19,6 @@ ThemeData lightTheme = ThemeData(
   unselectedWidgetColor: Colors.grey.shade400,
   disabledColor: Colors.grey.shade200,
   secondaryHeaderColor: Colors.grey,
-  dialogBackgroundColor: Colors.white,
   indicatorColor: const Color(0xff457BE0),
   hintColor: Colors.grey,
   platform: TargetPlatform.android,
@@ -110,9 +109,6 @@ ThemeData lightTheme = ThemeData(
   dividerTheme: const DividerThemeData(
       //divider, vertical divider theme
       ),
-  buttonBarTheme: const ButtonBarThemeData(
-      // button bar theme
-      ),
   textSelectionTheme: const TextSelectionThemeData(
     cursorColor: Color(0xff936F3E),
     selectionColor: Color(0xffB5BFD3),
@@ -195,7 +191,6 @@ ThemeData darkTheme = ThemeData(
   unselectedWidgetColor: Colors.grey.shade400,
   disabledColor: Colors.grey.shade200,
   secondaryHeaderColor: Colors.grey,
-  dialogBackgroundColor: Colors.white,
   indicatorColor: const Color(0xff457BE0),
   hintColor: Colors.grey,
   fontFamily: 'ROBOTO',
@@ -285,9 +280,6 @@ ThemeData darkTheme = ThemeData(
       ),
   dividerTheme: const DividerThemeData(
       //divider, vertical divider theme
-      ),
-  buttonBarTheme: const ButtonBarThemeData(
-      // button bar theme
       ),
   textSelectionTheme: const TextSelectionThemeData(
     cursorColor: Color(0xff483112),

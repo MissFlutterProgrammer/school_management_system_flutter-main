@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -41,7 +40,9 @@ class NtificationConfig {
     );
 
     await FirebaseMessaging.instance.getInitialMessage().then(
-      (value) {
+      (
+        value,
+      ) {
         FirebaseMessaging.onMessageOpenedApp.listen(handlemessage);
         FirebaseMessaging.onBackgroundMessage(handlemessage);
         FirebaseMessaging.onMessage.listen(

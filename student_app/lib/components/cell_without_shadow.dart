@@ -1,3 +1,5 @@
+// ignore_for_file: use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +21,10 @@ class CellWithoutShadow extends StatelessWidget {
           color: const Color.fromARGB(255, 248, 248, 248),
           borderRadius: BorderRadius.circular(3),
         ),
-        child: Text(textInCell, style: Theme.of(context).textTheme.headlineMedium),
+        child: Text(
+          textInCell,
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
       ),
     );
   }

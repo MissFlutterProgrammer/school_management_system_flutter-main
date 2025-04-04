@@ -228,7 +228,9 @@ class MarksController extends GetxController {
   }
 
   /// Screen Funtions
-  void onGradeDropdownChanged(String value) async {
+  void onGradeDropdownChanged(
+    String value,
+  ) async {
     if (gradeSelectedValue == value) return;
     gradeSelectedValue = value;
     await fetchSectionsData();
@@ -236,7 +238,9 @@ class MarksController extends GetxController {
     update();
   }
 
-  void onSectionDropdownChanged(String value) {
+  void onSectionDropdownChanged(
+    String value,
+  ) {
     if (sectionSelectedValue == value) return;
     sectionSelectedValue = value;
     fetchStudentsData();

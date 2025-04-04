@@ -53,7 +53,9 @@ class SectionsController extends GetxController {
     update();
   }
 
-  void onDropdownChanged(String value) {
+  void onDropdownChanged(
+    String value,
+  ) {
     if (selectedValue == value) return;
     selectedValue = value;
     fetchSectionsData();

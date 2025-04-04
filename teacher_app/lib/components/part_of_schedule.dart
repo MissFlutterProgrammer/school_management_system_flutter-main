@@ -1,6 +1,7 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'dart:math';
-
 import 'package:teacher_app/constant/my_colors.dart';
 
 class PartOfSchedule extends StatelessWidget {
@@ -44,11 +45,11 @@ class PartOfSchedule extends StatelessWidget {
     // Generate random colors for the LinearGradient
     // final Color color1 = _generateRandomColor();
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8),
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8),
             child: Column(
               children: [
                 Text(startTime),
@@ -67,12 +68,12 @@ class PartOfSchedule extends StatelessWidget {
                   begin: Alignment.bottomRight,
                   end: Alignment.topLeft,
                 ),
-                borderRadius: BorderRadius.circular(10.0),
+                borderRadius: BorderRadius.circular(10),
               ),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(10),
                     child: Row(
                       children: [
                         Text(className),
@@ -82,12 +83,12 @@ class PartOfSchedule extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: const EdgeInsets.only(left: 8),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 8.0),
+                          padding: EdgeInsets.symmetric(horizontal: 8),
                           child: Icon(Icons.add_a_photo),
                         ),
                         // Expanded(

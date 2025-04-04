@@ -1,12 +1,13 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/controller/notification_controller.dart';
-
 import '../constant/my_colors.dart';
 
 class Notify extends StatelessWidget {
-  const Notify({Key? key}) : super(key: key);
+  const Notify({super.key});
 
   @override
   Widget build(BuildContext context) {

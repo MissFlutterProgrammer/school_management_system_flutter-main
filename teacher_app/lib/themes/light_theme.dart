@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher_app/constant/my_colors.dart';
@@ -10,16 +12,6 @@ class LigthTheme {
 
     primaryColor: MyColors.royalBlue,
     scaffoldBackgroundColor: MyColors.milkyWhite,
-    // canvasColor: const Color(0xffE09E45),
-    // bottomAppBarColor: const Color(0xff6D42CE),
-    // cardColor: MyColors.royalBlue, // this effect the appBar
-    // dividerColor: Colors.red,
-    // highlightColor: const Color(0xff936F3E),
-    // splashColor: const Color(0xff457BE0),
-    // unselectedWidgetColor: Colors.grey.shade400,
-    // disabledColor: Colors.grey.shade200,
-    // backgroundColor: Color.fromARGB(255, 7, 23, 54),
-    dialogBackgroundColor: MyColors.milkyWhite,
     // indicatorColor: Colors.yellow,
     // focusColor: Colors.red,
     // hintColor: Colors.grey,
@@ -78,14 +70,22 @@ class LigthTheme {
         ),
         elevation: WidgetStateProperty.all(10),
         shadowColor: WidgetStateProperty.all(Colors.black),
-        backgroundColor: WidgetStateProperty.all(MyColors.royalBlue),
-        foregroundColor: WidgetStateProperty.all(MyColors.soLightBlue),
+        backgroundColor: WidgetStateProperty.all(
+          MyColors.royalBlue,
+        ),
+        foregroundColor: WidgetStateProperty.all(
+          MyColors.soLightBlue,
+        ),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: WidgetStateProperty.all<Color>(MyColors.soLightBlue),
-        backgroundColor: WidgetStateProperty.all<Color>(MyColors.royalBlue),
+        foregroundColor: WidgetStateProperty.all<Color>(
+          MyColors.soLightBlue,
+        ),
+        backgroundColor: WidgetStateProperty.all<Color>(
+          MyColors.royalBlue,
+        ),
         overlayColor: WidgetStateProperty.all<Color>(
           MyColors.milkyWhite.withOpacity(0.3),
         ),
@@ -130,8 +130,8 @@ class LigthTheme {
       backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(25.0),
-          topRight: Radius.circular(25.0),
+          topLeft: Radius.circular(25),
+          topRight: Radius.circular(25),
         ),
       ),
       //bottom sheet theme

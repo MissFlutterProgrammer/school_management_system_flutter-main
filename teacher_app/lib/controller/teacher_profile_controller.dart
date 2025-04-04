@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import '../model/teacher_profile_model.dart';
 import '../services/rest_api_get.dart';
 

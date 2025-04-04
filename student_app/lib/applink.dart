@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class AppLink {
   static const String server = 'http://192.168.1.104:9000';
 // profile

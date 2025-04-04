@@ -70,15 +70,21 @@ class Homepage extends StatelessWidget {
                             dropdownColor:
                                 const Color.fromRGBO(233, 238, 252, 1),
                             borderRadius: BorderRadius.circular(15),
-                            items: controller.dropdownItems.map((String value) {
+                            items: controller.dropdownItems.map((
+                              String value,
+                            ) {
                               return DropdownMenuItem<String>(
                                 value: value,
                                 alignment: Alignment.center,
-                                child: Text(value),
+                                child: Text(
+                                  value,
+                                ),
                               );
                             }).toList(),
                             value: controller.selectedValue,
-                            onChanged: (value) =>
+                            onChanged: (
+                              value,
+                            ) =>
                                 controller.onDropdownChanged(value!),
                           ),
                         ),

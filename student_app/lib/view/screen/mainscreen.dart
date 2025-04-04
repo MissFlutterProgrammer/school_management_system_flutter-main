@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, use_super_parameters, avoid_print
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:student_app/view/screen/homepage.dart';
@@ -47,7 +49,7 @@ class mainscreen extends StatelessWidget {
         animationDuration: const Duration(milliseconds: 500),
       ),
       body: Container(
-        child: getSelectedWidget(index:index),
+        child: getSelectedWidget(index: index),
       ),
     );
   }
@@ -71,8 +73,8 @@ Widget getSelectedWidget({required int index}) {
     case 4:
       widget = const HomePage();
       break;
-      default:
-       widget = const HomePage();
+    default:
+      widget = const HomePage();
       break;
   }
   return widget;

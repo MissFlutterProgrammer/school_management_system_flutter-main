@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/model/search_in_attendance_model.dart';
-
 import '../screen/student_profile.dart';
 
 class SearchInAttendance extends SearchDelegate {

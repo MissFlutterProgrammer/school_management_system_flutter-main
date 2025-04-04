@@ -1,17 +1,16 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'dart:convert';
 import 'dart:developer';
-
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:teacher_app/model/assignments_model.dart';
-
 import 'package:teacher_app/model/event_model.dart';
 import 'package:teacher_app/model/grade_model.dart';
 import 'package:teacher_app/model/posts_by_section_model.dart';
 import 'package:teacher_app/model/teacher_profile_model.dart';
 import 'package:teacher_app/model/schedule_model.dart';
 import 'package:teacher_app/model/students_model.dart';
-
 import '../constant/days.dart';
 import '../constant/my_url.dart';
 import '../model/courses_model.dart';
@@ -34,7 +33,10 @@ class RestAPIGet {
         var res = jsonDecode(response.body)['data'];
         // log(res);
 
-        res.forEach((key, value) {
+        res.forEach((
+          key,
+          value,
+        ) {
           try {
             DateTime dateTimeAfterParsing = DateTime.parse(key);
             DateTime dateTime = DateTime.utc(dateTimeAfterParsing.year,

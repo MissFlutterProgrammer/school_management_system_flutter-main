@@ -54,17 +54,23 @@ class MarksParent extends StatelessWidget {
                           underline: const Text(''),
                           dropdownColor: lightblue,
                           borderRadius: BorderRadius.circular(15),
-                          items: markscontroller.schoolyearItems
-                              .map((String value) {
+                          items: markscontroller.schoolyearItems.map((
+                            String value,
+                          ) {
                             return DropdownMenuItem<String>(
                               value: value,
                               alignment: Alignment.center,
-                              child: Text(value),
+                              child: Text(
+                                value,
+                              ),
                             );
                           }).toList(),
                           value: markscontroller.schoolyear,
-                          onChanged: (value) => markscontroller
-                              .onDropdownChangedSchoolyear('$value')),
+                          onChanged: (
+                            value,
+                          ) =>
+                              markscontroller
+                                  .onDropdownChangedSchoolyear('$value')),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 50),
@@ -92,16 +98,22 @@ class MarksParent extends StatelessWidget {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: markscontroller.termItems.map((String value) {
+                        items: markscontroller.termItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
 
                         value: markscontroller.term,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             {markscontroller.onDropdownChangedTerm('$value')},
                       ),
                     ),
@@ -197,10 +209,11 @@ class MarksParent extends StatelessWidget {
                                 child: Text(
                                   "", //"${controllermarks.marks.value!.finalScore}",
                                   style: TextStyle(
-                                      fontFamily: 'Montserrat',
-                                      color: darkblue,
-                                      fontSize: 23.sp,
-                                      fontWeight: FontWeight.w800),
+                                    fontFamily: 'Montserrat',
+                                    color: darkblue,
+                                    fontSize: 23.sp,
+                                    fontWeight: FontWeight.w800,
+                                  ),
                                 ),
                               ),
                             ),

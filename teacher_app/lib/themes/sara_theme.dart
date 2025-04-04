@@ -117,5 +117,4 @@ class SaraThemes {
   //Static TextStyles
 
 // End Of Static TextStyle
-
 }

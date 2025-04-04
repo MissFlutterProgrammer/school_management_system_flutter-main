@@ -1,12 +1,13 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
 import '../constant/my_colors.dart';
 import '../controller/students_profile_controller.dart';
 
 class StudentProfile extends StatelessWidget {
-  const StudentProfile({Key? key}) : super(key: key);
+  const StudentProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +50,7 @@ class StudentProfile extends StatelessWidget {
                           decoration: const BoxDecoration(
                             color: MyColors.royalBlue,
                             borderRadius: BorderRadius.vertical(
-                              bottom: Radius.circular(
-                                200,
-                              ),
+                              bottom: Radius.circular(200),
                             ),
                             boxShadow: [
                               BoxShadow(
@@ -74,7 +73,8 @@ class StudentProfile extends StatelessWidget {
                                 errorBuilder: (BuildContext context,
                                     Object object, StackTrace? stackTrace) {
                                   return Image.asset(
-                                      'assets/images/photo_2023-08-08_16-46-20.jpg');
+                                    'assets/images/photo_2023-08-08_16-46-20.jpg',
+                                  );
                                 },
                               ),
                             ),

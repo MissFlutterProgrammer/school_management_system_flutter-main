@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 class AboutSubModel {
   Teacher? teacher;
   About? about;
@@ -77,14 +79,15 @@ class About {
   int? topMark;
   int? lowerMark;
 
-  About(
-      {this.id,
-      this.gradeId,
-      this.courseId,
-      this.description,
-      this.numberOfWeeklyClasses,
-      this.topMark,
-      this.lowerMark});
+  About({
+    this.id,
+    this.gradeId,
+    this.courseId,
+    this.description,
+    this.numberOfWeeklyClasses,
+    this.topMark,
+    this.lowerMark,
+  });
 
   About.fromJson(Map<String, dynamic> json) {
     id = json['id'];

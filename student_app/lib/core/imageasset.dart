@@ -11,5 +11,4 @@ class AppImageAsset {
   static const String server = "$rootLottie/server.json";
 
   // static const String onBoardingImageFour   = "$rootImages/onboardingfour.PNG" ;
-
 }

@@ -9,16 +9,17 @@ class MarkSubFModel {
   String? createdAt;
   String? updatedAt;
 
-  MarkSubFModel(
-      {this.id,
-      this.studentId,
-      this.gradeCourseId,
-      this.type,
-      this.score,
-      this.year,
-      this.term,
-      this.createdAt,
-      this.updatedAt});
+  MarkSubFModel({
+    this.id,
+    this.studentId,
+    this.gradeCourseId,
+    this.type,
+    this.score,
+    this.year,
+    this.term,
+    this.createdAt,
+    this.updatedAt,
+  });
 
   MarkSubFModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -58,16 +59,17 @@ class MarkSubSModel {
   String? createdAt;
   String? updatedAt;
 
-  MarkSubSModel(
-      {this.id,
-      this.studentId,
-      this.gradeCourseId,
-      this.type,
-      this.score,
-      this.year,
-      this.term,
-      this.createdAt,
-      this.updatedAt});
+  MarkSubSModel({
+    this.id,
+    this.studentId,
+    this.gradeCourseId,
+    this.type,
+    this.score,
+    this.year,
+    this.term,
+    this.createdAt,
+    this.updatedAt,
+  });
 
   MarkSubSModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];

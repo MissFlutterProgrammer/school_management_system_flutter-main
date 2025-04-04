@@ -1,10 +1,10 @@
-import 'dart:io';
+// ignore_for_file: deprecated_member_use
 
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/components/my_drawer.dart';
 import 'package:teacher_app/controller/post_controller.dart';
-
 import '../constant/my_colors.dart';
 
 class Post extends StatelessWidget {
@@ -57,16 +57,21 @@ class Post extends StatelessWidget {
                               dropdownColor:
                                   const Color.fromRGBO(233, 238, 252, 1),
                               borderRadius: BorderRadius.circular(15),
-                              items: controller.typeDropdownItems
-                                  .map((String value) {
+                              items: controller.typeDropdownItems.map((
+                                String value,
+                              ) {
                                 return DropdownMenuItem<String>(
                                   value: value,
                                   alignment: Alignment.center,
-                                  child: Text(value),
+                                  child: Text(
+                                    value,
+                                  ),
                                 );
                               }).toList(),
                               value: controller.typeSelectedValue,
-                              onChanged: (value) =>
+                              onChanged: (
+                                value,
+                              ) =>
                                   controller.onTypeDropdownChanged(value!),
                             ),
                           ),
@@ -80,16 +85,21 @@ class Post extends StatelessWidget {
                               dropdownColor:
                                   const Color.fromRGBO(233, 238, 252, 1),
                               borderRadius: BorderRadius.circular(15),
-                              items: controller.gradeDropdownItems
-                                  .map((String value) {
+                              items: controller.gradeDropdownItems.map((
+                                String value,
+                              ) {
                                 return DropdownMenuItem<String>(
                                   value: value,
                                   alignment: Alignment.center,
-                                  child: Text(value),
+                                  child: Text(
+                                    value,
+                                  ),
                                 );
                               }).toList(),
                               value: controller.gradeSelectedValue,
-                              onChanged: (value) =>
+                              onChanged: (
+                                value,
+                              ) =>
                                   controller.onGradeDropdownChanged(value!),
                             ),
                           ),
@@ -99,17 +109,19 @@ class Post extends StatelessWidget {
                       Form(
                         key: controller.titleFormKey,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             children: [
                               const Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: EdgeInsets.all(8),
                                 child: Text('Title :'),
                               ),
                               Flexible(
                                 child: TextFormField(
                                   controller: controller.titleController,
-                                  validator: (value) {
+                                  validator: (
+                                    value,
+                                  ) {
                                     if (value == null || value.trim().isEmpty) {
                                       return 'Title is required';
                                     }
@@ -136,7 +148,9 @@ class Post extends StatelessWidget {
                           key: controller.contentFormKey,
                           child: TextFormField(
                             controller: controller.bodyController,
-                            validator: (value) {
+                            validator: (
+                              value,
+                            ) {
                               if (value == null || value.trim().isEmpty) {
                                 return 'content is required';
                               }
@@ -163,7 +177,7 @@ class Post extends StatelessWidget {
                             itemCount: controller.images!.length,
                             // physics: const NeverScrollableScrollPhysics(),
                             itemBuilder: (context, index) => Padding(
-                              padding: const EdgeInsets.only(bottom: 8.0),
+                              padding: const EdgeInsets.only(bottom: 8),
                               child: Stack(
                                 children: [
                                   Center(

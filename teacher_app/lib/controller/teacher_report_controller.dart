@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:teacher_app/model/serach_model.dart';
-
 import '../model/courses_model.dart';
 import '../model/grade_model.dart';
 import '../model/sections_model.dart';
@@ -140,7 +139,9 @@ class TeacherAlertController extends GetxController {
   }
 
   /// Funtions
-  void onGradeDropdownChanged(String value) async {
+  void onGradeDropdownChanged(
+    String value,
+  ) async {
     if (gradeSelectedValue == value) return;
     gradeSelectedValue = value;
     await fetchSectionsData();
@@ -148,7 +149,9 @@ class TeacherAlertController extends GetxController {
     update();
   }
 
-  void onSectionDropdownChanged(String value) {
+  void onSectionDropdownChanged(
+    String value,
+  ) {
     if (sectionSelectedValue == value) return;
     sectionSelectedValue = value;
     fetchStudentsData();

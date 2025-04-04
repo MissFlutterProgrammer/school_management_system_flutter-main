@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/controller/homework_controller.dart';
 import 'package:teacher_app/model/homework_section_model.dart';
-
 import '../components/my_drawer.dart';
 import '../constant/my_colors.dart';
 
@@ -56,16 +55,21 @@ class Homework extends StatelessWidget {
                               dropdownColor:
                                   const Color.fromRGBO(233, 238, 252, 1),
                               borderRadius: BorderRadius.circular(15),
-                              items: controller.typeDropdownItems
-                                  .map((String value) {
+                              items: controller.typeDropdownItems.map((
+                                String value,
+                              ) {
                                 return DropdownMenuItem<String>(
                                   value: value,
                                   alignment: Alignment.center,
-                                  child: Text(value),
+                                  child: Text(
+                                    value,
+                                  ),
                                 );
                               }).toList(),
                               value: controller.typeSelectedValue,
-                              onChanged: (value) =>
+                              onChanged: (
+                                value,
+                              ) =>
                                   controller.onTypeDropdownChanged(value!),
                             ),
                           ),
@@ -80,16 +84,21 @@ class Homework extends StatelessWidget {
                               dropdownColor:
                                   const Color.fromRGBO(233, 238, 252, 1),
                               borderRadius: BorderRadius.circular(15),
-                              items: controller.gradeDropdownItems
-                                  .map((String value) {
+                              items: controller.gradeDropdownItems.map((
+                                String value,
+                              ) {
                                 return DropdownMenuItem<String>(
                                   value: value,
                                   alignment: Alignment.center,
-                                  child: Text(value),
+                                  child: Text(
+                                    value,
+                                  ),
                                 );
                               }).toList(),
                               value: controller.gradeSelectedValue,
-                              onChanged: (value) =>
+                              onChanged: (
+                                value,
+                              ) =>
                                   controller.onGradeDropdownChanged(value!),
                             ),
                           ),
@@ -101,17 +110,19 @@ class Homework extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Row(
                                 children: [
                                   const Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8),
                                     child: Text('Title :'),
                                   ),
                                   Flexible(
                                     child: TextFormField(
                                       controller: controller.titleController,
-                                      validator: (value) {
+                                      validator: (
+                                        value,
+                                      ) {
                                         if (value == null || value.isEmpty) {
                                           return 'Title is required';
                                         }
@@ -137,17 +148,19 @@ class Homework extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Row(
                                 children: [
                                   const Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8),
                                     child: Text('DeadLine :'),
                                   ),
                                   Flexible(
                                     child: TextFormField(
                                       controller: controller.dateController,
-                                      validator: (value) {
+                                      validator: (
+                                        value,
+                                      ) {
                                         if (value == null ||
                                             value.trim().isEmpty) {
                                           return 'DeadLine is required';
@@ -202,7 +215,7 @@ class Homework extends StatelessWidget {
 
               /// BottomSheet
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8),
                 child: TextButton(
                   child: const Text('Add'),
                   onPressed: () => {
@@ -212,8 +225,8 @@ class Homework extends StatelessWidget {
                           backgroundColor: Colors.white,
                           shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(25.0),
-                              topRight: Radius.circular(25.0),
+                              topLeft: Radius.circular(25),
+                              topRight: Radius.circular(25),
                             ),
                           ),
                           isScrollControlled: true,
@@ -223,8 +236,8 @@ class Homework extends StatelessWidget {
                               height: MediaQuery.of(context).size.height / 1.5,
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(25.0),
-                                  topRight: Radius.circular(25.0),
+                                  topLeft: Radius.circular(25),
+                                  topRight: Radius.circular(25),
                                 ),
                               ),
                               // color: Colors.white,
@@ -257,7 +270,7 @@ class Homework extends StatelessWidget {
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8),
                                         child: Align(
                                           alignment: Alignment.centerRight,
                                           child: IconButton(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/animation/fadeanimation.dart';
-
 import '../constant/my_colors.dart';
 import '../controller/login_controller.dart';
 
@@ -74,7 +73,8 @@ class Login extends StatelessWidget {
                                   cursorHeight: 20,
                                   decoration: InputDecoration(
                                     counterStyle: const TextStyle(
-                                        color: MyColors.royalBlue),
+                                      color: MyColors.royalBlue,
+                                    ),
                                     contentPadding: const EdgeInsets.symmetric(
                                         horizontal: 20, vertical: 20),
                                     label: Container(
@@ -128,7 +128,8 @@ class Login extends StatelessWidget {
                                   },
                                   decoration: InputDecoration(
                                     counterStyle: const TextStyle(
-                                        color: MyColors.royalBlue),
+                                      color: MyColors.royalBlue,
+                                    ),
                                     contentPadding: const EdgeInsets.symmetric(
                                         horizontal: 20, vertical: 20),
                                     label: Container(
@@ -154,7 +155,8 @@ class Login extends StatelessWidget {
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(30),
                                       borderSide: const BorderSide(
-                                          color: MyColors.royalBlue),
+                                        color: MyColors.royalBlue,
+                                      ),
                                     ),
                                     suffixIcon: IconButton(
                                       icon: Icon(

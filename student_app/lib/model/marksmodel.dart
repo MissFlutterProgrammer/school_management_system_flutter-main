@@ -10,17 +10,18 @@ class MarksModel {
   String? courseName;
   GradeCourse? gradeCourse;
 
-  MarksModel(
-      {this.id,
-      this.studentId,
-      this.gradeCourseId,
-      this.year,
-      this.firstTermScore,
-      this.secondTermScore,
-      this.finalScore,
-      this.hasFailed,
-      this.courseName,
-      this.gradeCourse});
+  MarksModel({
+    this.id,
+    this.studentId,
+    this.gradeCourseId,
+    this.year,
+    this.firstTermScore,
+    this.secondTermScore,
+    this.finalScore,
+    this.hasFailed,
+    this.courseName,
+    this.gradeCourse,
+  });
 
   MarksModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -64,14 +65,15 @@ class GradeCourse {
   int? topMark;
   int? lowerMark;
 
-  GradeCourse(
-      {this.id,
-      this.gradeId,
-      this.courseId,
-      this.description,
-      this.numberOfWeeklyClasses,
-      this.topMark,
-      this.lowerMark});
+  GradeCourse({
+    this.id,
+    this.gradeId,
+    this.courseId,
+    this.description,
+    this.numberOfWeeklyClasses,
+    this.topMark,
+    this.lowerMark,
+  });
 
   GradeCourse.fromJson(Map<String, dynamic> json) {
     id = json['id'];

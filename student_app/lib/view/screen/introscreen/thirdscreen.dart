@@ -1,7 +1,8 @@
+// ignore_for_file: use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:student_app/colors.dart';
-
 
 class ThirdScreen extends StatelessWidget {
   const ThirdScreen({Key? key}) : super(key: key);
@@ -9,15 +10,23 @@ class ThirdScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-backgroundColor: white,
-body: Column(children: [
-Padding(
-  padding: const EdgeInsets.symmetric(vertical: 10),
-  child:   Image.asset("assets/icons/Grades-pana (1).png",height: 500.h,width: 500.w,),
-),
-Text("Show your marks !",style: Theme.of(context).textTheme.displayLarge,)
-
-]),
+      backgroundColor: white,
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: Image.asset(
+              "assets/icons/Grades-pana (1).png",
+              height: 500.h,
+              width: 500.w,
+            ),
+          ),
+          Text(
+            "Show your marks !",
+            style: Theme.of(context).textTheme.displayLarge,
+          )
+        ],
+      ),
     );
   }
 }

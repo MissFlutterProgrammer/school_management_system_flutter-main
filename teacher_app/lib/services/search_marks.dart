@@ -1,7 +1,8 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/model/serach_model.dart';
-
 import '../controller/marks_controller.dart';
 
 class SearchMarks extends SearchDelegate {
@@ -13,7 +14,7 @@ class SearchMarks extends SearchDelegate {
   List<Widget> buildActions(BuildContext context) {
     return [
       Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8),
         child: IconButton(
           onPressed: () {
             query = '';
@@ -72,16 +73,21 @@ class SearchMarks extends SearchDelegate {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: sceondController.markTypeDropdownItems
-                            .map((String value) {
+                        items: sceondController.markTypeDropdownItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
                         value: sceondController.markTypeSelectedValue,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             sceondController.onMarkTypeDropdownChanged(value!,
                                 '${sceondController.students[index].id}'),
                       ),
@@ -93,38 +99,54 @@ class SearchMarks extends SearchDelegate {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: sceondController.coursesDropdownItems
-                            .map((String value) {
+                        items: sceondController.coursesDropdownItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
                         value: sceondController.coursesSelectedValue,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             sceondController.onCoursesDropdownChanged(value!,
                                 '${sceondController.students[index].id}'),
                       ),
                       Form(
                         key: sceondController.formKey,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             children: [
                               const Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: EdgeInsets.all(8),
                                 child: Text('Mark'),
                               ),
                               Flexible(
                                 child: TextFormField(
                                   controller: sceondController.markController,
-                                  validator: (value) {
+                                  validator: (
+                                    value,
+                                  ) {
                                     if (value == null || value.trim().isEmpty) {
                                       return 'Mark is required';
-                                    } else if (int.tryParse(value) != null &&
-                                        int.tryParse(value)! <= 100 &&
-                                        int.tryParse(value)! >= 0) {
+                                    } else if (int.tryParse(
+                                              value,
+                                            ) !=
+                                            null &&
+                                        int.tryParse(
+                                              value,
+                                            )! <=
+                                            100 &&
+                                        int.tryParse(
+                                              value,
+                                            )! >=
+                                            0) {
                                       return null;
                                     } else {
                                       return 'between 0 and 100';
@@ -213,16 +235,21 @@ class SearchMarks extends SearchDelegate {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: sceondController.markTypeDropdownItems
-                            .map((String value) {
+                        items: sceondController.markTypeDropdownItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
                         value: sceondController.markTypeSelectedValue,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             sceondController.onMarkTypeDropdownChanged(value!,
                                 '${sceondController.students[index].id}'),
                       ),
@@ -234,38 +261,54 @@ class SearchMarks extends SearchDelegate {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: sceondController.coursesDropdownItems
-                            .map((String value) {
+                        items: sceondController.coursesDropdownItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
                         value: sceondController.coursesSelectedValue,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             sceondController.onCoursesDropdownChanged(value!,
                                 '${sceondController.students[index].id}'),
                       ),
                       Form(
                         key: sceondController.formKey,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             children: [
                               const Padding(
-                                padding: EdgeInsets.all(8.0),
+                                padding: EdgeInsets.all(8),
                                 child: Text('Mark'),
                               ),
                               Flexible(
                                 child: TextFormField(
                                   controller: sceondController.markController,
-                                  validator: (value) {
+                                  validator: (
+                                    value,
+                                  ) {
                                     if (value == null || value.trim().isEmpty) {
                                       return 'Mark is required';
-                                    } else if (int.tryParse(value) != null &&
-                                        int.tryParse(value)! <= 100 &&
-                                        int.tryParse(value)! >= 0) {
+                                    } else if (int.tryParse(
+                                              value,
+                                            ) !=
+                                            null &&
+                                        int.tryParse(
+                                              value,
+                                            )! <=
+                                            100 &&
+                                        int.tryParse(
+                                              value,
+                                            )! >=
+                                            0) {
                                       return null;
                                     } else {
                                       return 'between 0 and 100';

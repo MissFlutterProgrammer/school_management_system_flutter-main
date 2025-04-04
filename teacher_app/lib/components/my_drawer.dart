@@ -8,7 +8,6 @@ import 'package:teacher_app/screen/students_attendance.dart';
 import 'package:teacher_app/screen/teacher_report.dart';
 import 'package:teacher_app/screen/teachers_attendance.dart';
 import 'package:teacher_app/services/rest_api_post.dart';
-
 import '../controller/Drawer_controller.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -35,7 +34,8 @@ class MyDrawer extends StatelessWidget {
                             errorBuilder: (BuildContext context, Object object,
                                 StackTrace? stackTrace) {
                               return Image.asset(
-                                  'assets/images/photo_2023-08-08_16-46-20.jpg');
+                                'assets/images/photo_2023-08-08_16-46-20.jpg',
+                              );
                             },
                           ),
                         ),
@@ -58,8 +58,9 @@ class MyDrawer extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      decoration:
-                          const BoxDecoration(color: MyColors.royalBlue),
+                      decoration: const BoxDecoration(
+                        color: MyColors.royalBlue,
+                      ),
                     ),
                     ListTile(
                       title: Text(

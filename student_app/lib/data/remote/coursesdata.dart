@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:student_app/applink.dart';
 import '../../core/crud.dart';
 

@@ -1,6 +1,7 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../constant/my_colors.dart';
 
 class PartOfProfile extends StatelessWidget {
@@ -38,7 +39,8 @@ class PartOfProfile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color.fromARGB(255, 141, 168, 209).withOpacity(0.5),
+                    color: const Color.fromARGB(255, 141, 168, 209)
+                        .withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
                   ),

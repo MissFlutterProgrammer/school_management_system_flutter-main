@@ -1,9 +1,10 @@
+// ignore_for_file: depend_on_referenced_packages, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:teacher_app/constant/my_colors.dart';
-
 import '../constant/days.dart';
 import '../controller/table_calendar_controller.dart';
 import '../model/event_model.dart';
@@ -53,7 +54,9 @@ class Calendar extends StatelessWidget {
                         return Center(
                           child: Text(
                             text,
-                            style: const TextStyle(color: MyColors.textColor),
+                            style: const TextStyle(
+                              color: MyColors.textColor,
+                            ),
                           ),
                         );
                       },
@@ -65,12 +68,12 @@ class Calendar extends StatelessWidget {
                       formatButtonVisible: true,
                       formatButtonShowsNext: false,
                       formatButtonPadding: const EdgeInsets.symmetric(
-                        horizontal: 10.0,
-                        vertical: 4.0,
+                        horizontal: 10,
+                        vertical: 4,
                       ),
                       formatButtonDecoration: BoxDecoration(
                         borderRadius:
-                            const BorderRadius.all(Radius.circular(12.0)),
+                            const BorderRadius.all(Radius.circular(12)),
                         gradient: LinearGradient(
                           colors: [
                             MyColors.royalBlue,
@@ -80,7 +83,9 @@ class Calendar extends StatelessWidget {
                       ),
                     ),
                     calendarStyle: const CalendarStyle(
-                      holidayTextStyle: TextStyle(color: MyColors.textColor),
+                      holidayTextStyle: TextStyle(
+                        color: MyColors.textColor,
+                      ),
                       holidayDecoration: BoxDecoration(
                         color: MyColors.claendarWeekendColor,
                         shape: BoxShape.circle,
@@ -91,7 +96,9 @@ class Calendar extends StatelessWidget {
                         color: Colors.pinkAccent,
                         shape: BoxShape.circle,
                       ),
-                      weekendTextStyle: TextStyle(color: MyColors.textColor),
+                      weekendTextStyle: TextStyle(
+                        color: MyColors.textColor,
+                      ),
                       weekendDecoration: BoxDecoration(
                         color: MyColors.claendarWeekendColor,
                         shape: BoxShape.circle,
@@ -128,7 +135,7 @@ class Calendar extends StatelessWidget {
                         Event event = controller
                             .getEventsForDay(controller.selectedDay)[index];
                         return Container(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
                               colors: [
@@ -163,7 +170,9 @@ class Calendar extends StatelessWidget {
                             subtitle: Center(
                               child: Text(
                                 event.content,
-                                style: const TextStyle(color: Colors.white),
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -41,70 +43,75 @@ class AssignParent extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: Column(children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 3, horizontal: 5),
-                    child: Row(
-                      children: [
-                        Text(
-                          "  Homework Name",
-                          style: Theme.of(context).textTheme.displayLarge,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 100),
-                          child: GetX<CheckBoxController>(
-                            builder: ((controller) => Checkbox(
-                                  activeColor: Colors.green,
-                                  checkColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50),
-                                  ),
-                                  value: controller.isChecked.value,
-                                  onChanged: (value) {
-                                    controller.isChecked.value = value!;
-                                    showDialog(
-                                        context: context,
-                                        builder: (context) {
-                                          return AlertDialog(
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(7),
-                                            ),
-                                            title: Text(
-                                              "Your homework is done, thanks for your efforts ",
-                                              style: TextStyle(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 3, horizontal: 5),
+                      child: Row(
+                        children: [
+                          Text(
+                            "  Homework Name",
+                            style: Theme.of(context).textTheme.displayLarge,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 100),
+                            child: GetX<CheckBoxController>(
+                              builder: ((controller) => Checkbox(
+                                    activeColor: Colors.green,
+                                    checkColor: Colors.white,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    value: controller.isChecked.value,
+                                    onChanged: (
+                                      value,
+                                    ) {
+                                      controller.isChecked.value = value!;
+                                      showDialog(
+                                          context: context,
+                                          builder: (context) {
+                                            return AlertDialog(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(7),
+                                              ),
+                                              title: Text(
+                                                "Your homework is done, thanks for your efforts ",
+                                                style: TextStyle(
                                                   fontSize: 13.sp,
                                                   fontWeight: FontWeight.w700,
-                                                  color: darkblue),
-                                            ),
-                                            // titlePadding: ,
-                                            backgroundColor: white,
-                                            scrollable: true,
-                                          );
-                                        });
-                                  },
-                                )),
+                                                  color: darkblue,
+                                                ),
+                                              ),
+                                              // titlePadding: ,
+                                              backgroundColor: white,
+                                              scrollable: true,
+                                            );
+                                          });
+                                    },
+                                  )),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    child: Text(
-                      "beo beo ahmad mohsen beo beo ahmad mohsenbeo beo ahmad mohsenbeo beo ahmad mohsenbeo beo ahmad mohsen",
-                      style: Theme.of(context).textTheme.headlineSmall,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Text(
+                        "beo beo ahmad mohsen beo beo ahmad mohsenbeo beo ahmad mohsenbeo beo ahmad mohsenbeo beo ahmad mohsen",
+                        style: Theme.of(context).textTheme.headlineSmall,
+                      ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 175, top: 10),
-                    child: Text(
-                      " Date : 10/7/2022",
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                  )
-                ]),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 175, top: 10),
+                      child: Text(
+                        " Date : 10/7/2022",
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                    )
+                  ],
+                ),
               ),
             );
           }),

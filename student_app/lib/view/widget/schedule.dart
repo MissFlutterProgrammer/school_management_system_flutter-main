@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, use_super_parameters, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -169,8 +171,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -182,45 +186,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -243,8 +212,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -290,8 +302,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -303,45 +317,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -364,8 +343,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -411,8 +433,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -424,45 +448,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -485,8 +474,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -532,8 +564,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -545,8 +579,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -569,8 +605,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -582,8 +620,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -596,8 +636,8 @@ class schedule extends StatelessWidget {
                       borderRadius: BorderRadius.circular(3),
                       boxShadow: [
                         BoxShadow(
-                          color:
-                              const Color.fromRGBO(65, 105, 225, 1).withOpacity(0.5),
+                          color: const Color.fromRGBO(65, 105, 225, 1)
+                              .withOpacity(0.5),
 
                           spreadRadius: 2,
 
@@ -607,8 +647,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -654,8 +696,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -667,45 +711,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -728,8 +737,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -775,8 +827,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -788,45 +842,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -849,8 +868,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],
@@ -896,8 +958,10 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
                 Padding(
@@ -909,45 +973,10 @@ class schedule extends StatelessWidget {
                       color: const Color.fromARGB(255, 248, 248, 248),
                       borderRadius: BorderRadius.circular(3),
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                      boxShadow: [
-                        BoxShadow(
-                          color: darkblue.withOpacity(0.5),
-
-                          spreadRadius: 2,
-
-                          // blurRadius: 5,
-
-                          // offset: Offset(0, 3),
-                        ),
-                      ],
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(3),
-                  child: Container(
-                    height: 22.h,
-                    width: 50.w,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 248, 248, 248),
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
                   ),
                 ),
                 Padding(
@@ -970,8 +999,51 @@ class schedule extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Text(" Math",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(3),
+                  child: Container(
+                    height: 22.h,
+                    width: 50.w,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 248, 248, 248),
+                      borderRadius: BorderRadius.circular(3),
+                      boxShadow: [
+                        BoxShadow(
+                          color: darkblue.withOpacity(0.5),
+
+                          spreadRadius: 2,
+
+                          // blurRadius: 5,
+
+                          // offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      " Math",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                   ),
                 ),
               ],

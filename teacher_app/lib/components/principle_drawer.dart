@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:teacher_app/constant/my_colors.dart';
 import 'package:teacher_app/controller/Drawer_controller.dart';
 import 'package:teacher_app/screen/calendar.dart';
-
 import '../screen/students_attendance.dart';
 
 class PrincipleDrawer extends StatelessWidget {
@@ -39,7 +38,9 @@ class PrincipleDrawer extends StatelessWidget {
               currentAccountPicture: const CircleAvatar(
                 backgroundColor: MyColors.soLightBlue,
               ),
-              decoration: const BoxDecoration(color: MyColors.royalBlue),
+              decoration: const BoxDecoration(
+                color: MyColors.royalBlue,
+              ),
             ),
             ListTile(
               title: Text(

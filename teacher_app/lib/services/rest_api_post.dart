@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
@@ -8,7 +7,6 @@ import 'package:teacher_app/common/my_snackbar.dart';
 import 'package:teacher_app/components/bottom_bar.dart';
 import 'package:teacher_app/components/principle_bottom_bar.dart';
 import 'package:teacher_app/screen/login.dart';
-
 import '../constant/my_url.dart';
 import '../model/homework_section_model.dart';
 import '../model/student_attendance_model.dart';

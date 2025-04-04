@@ -1,5 +1,6 @@
-import 'dart:developer';
+// ignore_for_file: use_super_parameters, deprecated_member_use
 
+import 'dart:developer';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -41,88 +42,104 @@ class Test22 extends StatelessWidget {
       ),
       drawer: Drawer(
         backgroundColor: white,
-        child: Column(children: [
-          UserAccountsDrawerHeader(
-            accountName: Text("Sara Al Dalati",
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text(
+                "Sara Al Dalati",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 18.sp,
                   color: lightblue,
                   fontWeight: FontWeight.bold,
-                )),
-            accountEmail: Text("@sarada",
+                ),
+              ),
+              accountEmail: Text(
+                "@sarada",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 10.sp,
                   color: lightblue,
                   fontWeight: FontWeight.bold,
-                )),
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: lightblue,
+                ),
+              ),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: lightblue,
+              ),
+              decoration: BoxDecoration(
+                color: darkblue,
+              ),
             ),
-            decoration: BoxDecoration(color: darkblue),
-          ),
-          ListTile(
-            title: Text("Home page",
+            ListTile(
+              title: Text(
+                "Home page",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 19.sp,
                   color: blue,
                   fontWeight: FontWeight.bold,
-                )),
-            onTap: () => log(""),
-            leading: Image.asset(
-              "assets/icons/homepage.png",
-              height: 35.h,
-              width: 40.w,
+                ),
+              ),
+              onTap: () => log(""),
+              leading: Image.asset(
+                "assets/icons/homepage.png",
+                height: 35.h,
+                width: 40.w,
+              ),
             ),
-          ),
-          ListTile(
-            title: Text("Exams ",
+            ListTile(
+              title: Text(
+                "Exams ",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 19.sp,
                   color: blue,
                   fontWeight: FontWeight.bold,
-                )),
-            onTap: () => log(""),
-            leading: Image.asset(
-              "assets/icons/homepage.png",
-              height: 35.h,
-              width: 40.w,
+                ),
+              ),
+              onTap: () => log(""),
+              leading: Image.asset(
+                "assets/icons/homepage.png",
+                height: 35.h,
+                width: 40.w,
+              ),
             ),
-          ),
-          ListTile(
-            title: Text("Calender ",
+            ListTile(
+              title: Text(
+                "Calender ",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 19.sp,
                   color: blue,
                   fontWeight: FontWeight.bold,
-                )),
-            onTap: () => log(""),
-            leading: Image.asset(
-              "assets/icons/homepage.png",
-              height: 35.h,
-              width: 40.w,
+                ),
+              ),
+              onTap: () => log(""),
+              leading: Image.asset(
+                "assets/icons/homepage.png",
+                height: 35.h,
+                width: 40.w,
+              ),
             ),
-          ),
-          ListTile(
-            title: Text("Settings ",
+            ListTile(
+              title: Text(
+                "Settings ",
                 style: TextStyle(
                   fontFamily: 'Montserrat',
                   fontSize: 19.sp,
                   color: blue,
                   fontWeight: FontWeight.bold,
-                )),
-            onTap: () => log(""),
-            leading: Image.asset(
-              "assets/icons/homepage.png",
-              height: 35.h,
-              width: 40.w,
-            ),
-          )
-        ]),
+                ),
+              ),
+              onTap: () => log(""),
+              leading: Image.asset(
+                "assets/icons/homepage.png",
+                height: 35.h,
+                width: 40.w,
+              ),
+            )
+          ],
+        ),
       ),
       body: GetBuilder<HomePageController>(
         builder: (homeController) => homeController.isLoading
@@ -141,10 +158,10 @@ class Test22 extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(15),
                             child: Text(
-                                "  Assignments :                                           "
-                                    .tr,
-                                style:
-                                    Theme.of(context).textTheme.displayLarge),
+                              "  Assignments :                                           "
+                                  .tr,
+                              style: Theme.of(context).textTheme.displayLarge,
+                            ),
                           ),
                           SizedBox(
                             width: 400.w,
@@ -172,9 +189,10 @@ class Test22 extends StatelessWidget {
                                             title: Text(
                                               " ",
                                               style: TextStyle(
-                                                  fontSize: 25,
-                                                  fontWeight: FontWeight.w400,
-                                                  color: darkblue),
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.w400,
+                                                color: darkblue,
+                                              ),
                                             ),
                                             // titlePadding: ,
                                             backgroundColor: white,
@@ -205,17 +223,19 @@ class Test22 extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      child: Column(children: [
-                                        Image.asset(
-                                          "assets/icons/push-pin (1).png",
-                                          height: 30,
-                                          width: 30,
-                                        ),
-                                        const Padding(
-                                          padding: EdgeInsets.all(8.0),
-                                          child: Text(" "),
-                                        )
-                                      ]),
+                                      child: Column(
+                                        children: [
+                                          Image.asset(
+                                            "assets/icons/push-pin (1).png",
+                                            height: 30,
+                                            width: 30,
+                                          ),
+                                          const Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Text(" "),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 );

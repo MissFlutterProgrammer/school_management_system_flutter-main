@@ -2,7 +2,6 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:teacher_app/services/rest_api_get.dart';
-
 import '../model/event_model.dart';
 
 class TableCalendarController extends GetxController {
@@ -33,17 +32,24 @@ class TableCalendarController extends GetxController {
     // log(temporary);
 
     temporary.forEach(
-      (key, value) {
+      (
+        key,
+        value,
+      ) {
         if (value.isEmpty) {
           update();
           return;
         } else if (value[0].isHoliday) {
           selectedEvents[key] ??= [];
-          selectedEvents[key]!.addAll(value);
+          selectedEvents[key]!.addAll(
+            value,
+          );
           holidays.add(key);
         } else {
           selectedEvents[key] ??= [];
-          selectedEvents[key]!.addAll(value);
+          selectedEvents[key]!.addAll(
+            value,
+          );
         }
       },
     );

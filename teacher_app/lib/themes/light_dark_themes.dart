@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:teacher_app/constant/my_colors.dart';
 
@@ -18,14 +20,18 @@ class LightDarkTheme {
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: WidgetStateProperty.all<Color>(MyColors.soLightBlue),
-        backgroundColor: WidgetStateProperty.all<Color>(MyColors.royalBlue),
+        foregroundColor: WidgetStateProperty.all<Color>(
+          MyColors.soLightBlue,
+        ),
+        backgroundColor: WidgetStateProperty.all<Color>(
+          MyColors.royalBlue,
+        ),
         overlayColor: WidgetStateProperty.all<Color>(
             MyColors.milkyWhite.withOpacity(0.3)),
         padding: WidgetStateProperty.all<EdgeInsets>(
           const EdgeInsets.symmetric(
-            vertical: 12.0,
-            horizontal: 24.0,
+            vertical: 12,
+            horizontal: 24,
           ),
         ),
         textStyle: WidgetStateProperty.all<TextStyle>(
@@ -84,13 +90,13 @@ class LDT {
       toolbarTextStyle: const TextTheme(
         titleLarge: TextStyle(
           color: Colors.white,
-          fontSize: 18.0,
+          fontSize: 18,
         ),
       ).bodyMedium,
       titleTextStyle: const TextTheme(
         titleLarge: TextStyle(
           color: Colors.white,
-          fontSize: 18.0,
+          fontSize: 18,
         ),
       ).titleLarge,
     ),
@@ -132,13 +138,13 @@ class LDT {
       toolbarTextStyle: const TextTheme(
         titleLarge: TextStyle(
           color: Colors.white,
-          fontSize: 18.0,
+          fontSize: 18,
         ),
       ).bodyMedium,
       titleTextStyle: const TextTheme(
         titleLarge: TextStyle(
           color: Colors.white,
-          fontSize: 18.0,
+          fontSize: 18,
         ),
       ).titleLarge,
     ),
@@ -164,15 +170,15 @@ class LDT {
 
 // Static TextStyles
   static const TextStyle headline1 = TextStyle(
-    fontSize: 72.0,
+    fontSize: 72,
     fontWeight: FontWeight.bold,
   );
   static const TextStyle headline6 = TextStyle(
-    fontSize: 36.0,
+    fontSize: 36,
     fontStyle: FontStyle.italic,
   );
   static const TextStyle bodyText2 = TextStyle(
-    fontSize: 14.0,
+    fontSize: 14,
     fontFamily: 'Hind',
   );
 // End Of Static TextStyle

@@ -1,9 +1,10 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/controller/assignments_controller.dart';
 import 'package:teacher_app/model/assignments_model.dart';
-
 import '../constant/my_colors.dart';
 
 class Assignments extends StatelessWidget {

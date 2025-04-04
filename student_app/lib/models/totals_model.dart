@@ -39,17 +39,18 @@ class Totals {
   String? courseName;
   GradeCourse? gradeCourse;
 
-  Totals(
-      {this.id,
-      this.studentId,
-      this.gradeCourseId,
-      this.year,
-      this.firstTermScore,
-      this.secondTermScore,
-      this.finalScore,
-      this.hasFailed,
-      this.courseName,
-      this.gradeCourse});
+  Totals({
+    this.id,
+    this.studentId,
+    this.gradeCourseId,
+    this.year,
+    this.firstTermScore,
+    this.secondTermScore,
+    this.finalScore,
+    this.hasFailed,
+    this.courseName,
+    this.gradeCourse,
+  });
 
   Totals.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -93,14 +94,15 @@ class GradeCourse {
   int? topMark;
   int? lowerMark;
 
-  GradeCourse(
-      {this.id,
-      this.gradeId,
-      this.courseId,
-      this.description,
-      this.numberOfWeeklyClasses,
-      this.topMark,
-      this.lowerMark});
+  GradeCourse({
+    this.id,
+    this.gradeId,
+    this.courseId,
+    this.description,
+    this.numberOfWeeklyClasses,
+    this.topMark,
+    this.lowerMark,
+  });
 
   GradeCourse.fromJson(Map<String, dynamic> json) {
     id = json['id'];

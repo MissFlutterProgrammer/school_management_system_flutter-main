@@ -25,8 +25,9 @@ class Students extends StatelessWidget {
                 onPressed: () {
                   showSearch(
                     context: context,
-                    delegate:
-                        SearchStudents(searchTerms: controller.searchList),
+                    delegate: SearchStudents(
+                      searchTerms: controller.searchList,
+                    ),
                   );
                 },
                 icon: const Icon(Icons.search_outlined),
@@ -52,12 +53,14 @@ class Students extends StatelessWidget {
                           errorBuilder: (BuildContext context, Object object,
                               StackTrace? stackTrace) {
                             return Image.asset(
-                                'assets/images/photo_2023-08-08_16-46-20.jpg');
+                              'assets/images/photo_2023-08-08_16-46-20.jpg',
+                            );
                           },
                         ),
                       ),
                       title: Text(
-                          '${item.firstName!} ${item.middleName!} ${item.lastName!}'),
+                        '${item.firstName!} ${item.middleName!} ${item.lastName!}',
+                      ),
                       trailing:
                           const Icon(Icons.arrow_forward), // may be arrow icon
                       // subtitle: Row(

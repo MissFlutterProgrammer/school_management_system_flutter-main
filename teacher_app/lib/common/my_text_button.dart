@@ -4,10 +4,10 @@ class MyTextButton extends StatelessWidget {
   final Widget childWidget;
   final Function onP;
   const MyTextButton({
-    Key? key,
+    super.key,
     required this.childWidget,
     required this.onP,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

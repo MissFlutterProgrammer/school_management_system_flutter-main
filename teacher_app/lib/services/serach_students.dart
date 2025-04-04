@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/model/serach_model.dart';
-
 import '../screen/student_profile.dart';
 
 class SearchStudents extends SearchDelegate {
@@ -13,7 +12,7 @@ class SearchStudents extends SearchDelegate {
   List<Widget> buildActions(BuildContext context) {
     return [
       Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8),
         child: IconButton(
           onPressed: () {
             query = '';

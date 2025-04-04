@@ -56,15 +56,21 @@ class Marks extends StatelessWidget {
                       underline: const Text(''),
                       dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                       borderRadius: BorderRadius.circular(15),
-                      items: controller.gradeDropdownItems.map((String value) {
+                      items: controller.gradeDropdownItems.map((
+                        String value,
+                      ) {
                         return DropdownMenuItem<String>(
                           value: value,
                           alignment: Alignment.center,
-                          child: Text(value),
+                          child: Text(
+                            value,
+                          ),
                         );
                       }).toList(),
                       value: controller.gradeSelectedValue,
-                      onChanged: (value) =>
+                      onChanged: (
+                        value,
+                      ) =>
                           controller.onGradeDropdownChanged(value!),
                     ),
                   ),
@@ -77,16 +83,21 @@ class Marks extends StatelessWidget {
                       underline: const Text(''),
                       dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                       borderRadius: BorderRadius.circular(15),
-                      items:
-                          controller.sectionDropdownItems.map((String value) {
+                      items: controller.sectionDropdownItems.map((
+                        String value,
+                      ) {
                         return DropdownMenuItem<String>(
                           value: value,
                           alignment: Alignment.center,
-                          child: Text(value),
+                          child: Text(
+                            value,
+                          ),
                         );
                       }).toList(),
                       value: controller.sectionSelectedValue,
-                      onChanged: (value) =>
+                      onChanged: (
+                        value,
+                      ) =>
                           controller.onSectionDropdownChanged(value!),
                     ),
                   ),
@@ -148,18 +159,25 @@ class Marks extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(15),
                                     items: sceondController
                                         .markTypeDropdownItems
-                                        .map((String value) {
+                                        .map((
+                                      String value,
+                                    ) {
                                       return DropdownMenuItem<String>(
                                         value: value,
                                         alignment: Alignment.center,
-                                        child: Text(value),
+                                        child: Text(
+                                          value,
+                                        ),
                                       );
                                     }).toList(),
                                     value:
                                         sceondController.markTypeSelectedValue,
-                                    onChanged: (value) => sceondController
-                                        .onMarkTypeDropdownChanged(
-                                            value!, '${item.id}'),
+                                    onChanged: (
+                                      value,
+                                    ) =>
+                                        sceondController
+                                            .onMarkTypeDropdownChanged(
+                                                value!, '${item.id}'),
                                   ),
                                   DropdownButton(
                                     iconSize: 24,
@@ -172,18 +190,25 @@ class Marks extends StatelessWidget {
                                         const Color.fromRGBO(233, 238, 252, 1),
                                     borderRadius: BorderRadius.circular(15),
                                     items: sceondController.coursesDropdownItems
-                                        .map((String value) {
+                                        .map((
+                                      String value,
+                                    ) {
                                       return DropdownMenuItem<String>(
                                         value: value,
                                         alignment: Alignment.center,
-                                        child: Text(value),
+                                        child: Text(
+                                          value,
+                                        ),
                                       );
                                     }).toList(),
                                     value:
                                         sceondController.coursesSelectedValue,
-                                    onChanged: (value) => sceondController
-                                        .onCoursesDropdownChanged(
-                                            value!, '${item.id}'),
+                                    onChanged: (
+                                      value,
+                                    ) =>
+                                        sceondController
+                                            .onCoursesDropdownChanged(
+                                                value!, '${item.id}'),
                                   ),
                                   Form(
                                     key: sceondController.formKey,
@@ -200,16 +225,24 @@ class Marks extends StatelessWidget {
                                             child: TextFormField(
                                               controller: sceondController
                                                   .markController,
-                                              validator: (value) {
+                                              validator: (
+                                                value,
+                                              ) {
                                                 if (value == null ||
                                                     value.trim().isEmpty) {
                                                   return 'Mark is required';
                                                 } else if (int.tryParse(
-                                                            value) !=
+                                                          value,
+                                                        ) !=
                                                         null &&
-                                                    int.tryParse(value)! <=
+                                                    int.tryParse(
+                                                          value,
+                                                        )! <=
                                                         100 &&
-                                                    int.tryParse(value)! >= 0) {
+                                                    int.tryParse(
+                                                          value,
+                                                        )! >=
+                                                        0) {
                                                   return null;
                                                 } else {
                                                   return 'between 0 and 100';

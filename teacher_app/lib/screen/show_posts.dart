@@ -1,13 +1,14 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/constant/my_colors.dart';
 import 'package:teacher_app/model/posts_by_section_model.dart';
-
 import '../controller/posts_controller.dart';
 
 class ShowPosts extends StatelessWidget {
-  const ShowPosts({Key? key}) : super(key: key);
+  const ShowPosts({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -176,8 +177,9 @@ class ShowPosts extends StatelessWidget {
                                         horizontal: 15),
                                     child: Text(
                                       item.content!,
-                                      style:
-                                          Theme.of(context).textTheme.headlineSmall,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .headlineSmall,
                                     ),
                                   ),
                                   if (item.attachments != null ||

@@ -9,16 +9,17 @@ class ScheduleModel {
   String? createdAt;
   String? updatedAt;
 
-  ScheduleModel(
-      {this.id,
-      this.sectionId,
-      this.gradeCourseId,
-      this.order,
-      this.startAt,
-      this.endAt,
-      this.day,
-      this.createdAt,
-      this.updatedAt});
+  ScheduleModel({
+    this.id,
+    this.sectionId,
+    this.gradeCourseId,
+    this.order,
+    this.startAt,
+    this.endAt,
+    this.day,
+    this.createdAt,
+    this.updatedAt,
+  });
 
   ScheduleModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];

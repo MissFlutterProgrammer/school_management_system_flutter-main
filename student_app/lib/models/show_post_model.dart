@@ -38,16 +38,17 @@ class PostsToShow {
   Teacher? teacher;
   List<Attachments>? attachments;
 
-  PostsToShow(
-      {this.id,
-      this.teacherId,
-      this.gradeId,
-      this.title,
-      this.content,
-      this.type,
-      this.elapsedTime,
-      this.teacher,
-      this.attachments});
+  PostsToShow({
+    this.id,
+    this.teacherId,
+    this.gradeId,
+    this.title,
+    this.content,
+    this.type,
+    this.elapsedTime,
+    this.teacher,
+    this.attachments,
+  });
 
   PostsToShow.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -98,17 +99,18 @@ class Teacher {
   String? gender;
   Course? course;
 
-  Teacher(
-      {this.id,
-      this.username,
-      this.firstName,
-      this.lastName,
-      this.imageUrl,
-      this.bio,
-      this.dateOfBirth,
-      this.isPrinciple,
-      this.gender,
-      this.course});
+  Teacher({
+    this.id,
+    this.username,
+    this.firstName,
+    this.lastName,
+    this.imageUrl,
+    this.bio,
+    this.dateOfBirth,
+    this.isPrinciple,
+    this.gender,
+    this.course,
+  });
 
   Teacher.fromJson(Map<String, dynamic> json) {
     id = json['id'];

@@ -69,13 +69,17 @@ class PostController extends GetxController {
     update();
   }
 
-  void onTypeDropdownChanged(String value) {
+  void onTypeDropdownChanged(
+    String value,
+  ) {
     if (typeSelectedValue == value) return;
     typeSelectedValue = value;
     update();
   }
 
-  void onGradeDropdownChanged(String value) {
+  void onGradeDropdownChanged(
+    String value,
+  ) {
     if (gradeSelectedValue == value) return;
     gradeSelectedValue = value;
     update();

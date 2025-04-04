@@ -118,7 +118,9 @@ class StudentsAttendanceController extends GetxController {
     update();
   }
 
-  void onGradeDropdownChanged(String value) async {
+  void onGradeDropdownChanged(
+    String value,
+  ) async {
     if (gradeSelectedValue == value) return;
     gradeSelectedValue = value;
     await fetchSectionsData();
@@ -127,7 +129,9 @@ class StudentsAttendanceController extends GetxController {
     update();
   }
 
-  void onSectionDropdownChanged(String value) async {
+  void onSectionDropdownChanged(
+    String value,
+  ) async {
     if (sectionSelectedValue == value) return;
     sectionSelectedValue = value;
     await fetchStudentsData();

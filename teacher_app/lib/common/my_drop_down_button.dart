@@ -5,11 +5,11 @@ class MyDropDownButton extends StatelessWidget {
   final List<String> childText;
   final Function changeValue;
   const MyDropDownButton({
-    Key? key,
+    super.key,
     required this.hintText,
     required this.childText,
     required this.changeValue,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,10 @@ class MyDropDownButton extends StatelessWidget {
           child: Text(item),
         );
       }).toList(),
-      onChanged: (value) => changeValue,
+      onChanged: (
+        value,
+      ) =>
+          changeValue,
     );
   }
 }

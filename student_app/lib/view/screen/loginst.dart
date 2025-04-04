@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -25,12 +24,14 @@ class LoginstState extends State<Loginst> {
   bool icn1 = false;
   GlobalKey<FormState> formstate = GlobalKey<FormState>();
 
-  Text x = Text("login",
-      style: TextStyle(
-        fontFamily: 'Montserrat',
-        fontWeight: FontWeight.w600,
-        fontSize: 16.sp,
-      ));
+  Text x = Text(
+    "login",
+    style: TextStyle(
+      fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w600,
+      fontSize: 16.sp,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -67,130 +68,142 @@ class LoginstState extends State<Loginst> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 child: SizedBox(
-                    height: 130.h,
-                    width: 400.w,
-                    child: Form(
-                        key: formstate,
-                        child: Column(children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: TextFormField(
-                              onSaved: (text) {
-                                email = text!;
-                              },
-                              keyboardType: TextInputType.emailAddress,
-                              validator: (text) {
-                                return (text != null && text.contains('@'))
-                                    ? null
-                                    : "you dont use the @ char";
-                              },
-                              cursorColor:
-                                  const Color.fromARGB(255, 141, 168, 209),
-                              cursorHeight: 20,
-                              decoration: InputDecoration(
-                                counterStyle: TextStyle(color: darkblue),
-                                contentPadding: const EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 20),
-                                label: Container(
-                                  margin: const EdgeInsets.symmetric(
-                                      horizontal: 14),
-                                  child: Text(
-                                    "Username",
-                                    style: TextStyle(
-                                        fontFamily: 'Montserrat',
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color: darkblue),
+                  height: 130.h,
+                  width: 400.w,
+                  child: Form(
+                    key: formstate,
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: TextFormField(
+                            onSaved: (text) {
+                              email = text!;
+                            },
+                            keyboardType: TextInputType.emailAddress,
+                            validator: (text) {
+                              return (text != null && text.contains('@'))
+                                  ? null
+                                  : "you dont use the @ char";
+                            },
+                            cursorColor:
+                                const Color.fromARGB(255, 141, 168, 209),
+                            cursorHeight: 20,
+                            decoration: InputDecoration(
+                              counterStyle: TextStyle(
+                                color: darkblue,
+                              ),
+                              contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 20),
+                              label: Container(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 14),
+                                child: Text(
+                                  "Username",
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: darkblue,
                                   ),
                                 ),
+                              ),
 
-                                hintText: "Enter your username",
-                                hintStyle: TextStyle(
-                                  color:
-                                      const Color.fromARGB(255, 141, 168, 209),
-                                  fontFamily: 'Montserrat',
-                                  fontSize: 12.sp,
+                              hintText: "Enter your username",
+                              hintStyle: TextStyle(
+                                color: const Color.fromARGB(255, 141, 168, 209),
+                                fontFamily: 'Montserrat',
+                                fontSize: 12.sp,
+                              ),
+                              // filled: true,
+                              //  fillColor: lightblue,
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(30),
+                                borderSide: BorderSide(
+                                  color: lightblue,
                                 ),
-                                // filled: true,
-                                //  fillColor: lightblue,
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(
-                                    color: lightblue,
-                                  ),
-                                  // borderSide: BorderSide.none,
-                                ),
-                                suffixIcon: Icon(
-                                  Icons.person,
-                                  color: darkblue,
-                                ),
+                                // borderSide: BorderSide.none,
+                              ),
+                              suffixIcon: Icon(
+                                Icons.person,
+                                color: darkblue,
                               ),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: TextFormField(
-                                onSaved: (text) {
-                                  password = text!;
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: TextFormField(
+                            onSaved: (text) {
+                              password = text!;
+                            },
+                            keyboardType: TextInputType.visiblePassword,
+                            obscureText: icn1,
+                            cursorColor:
+                                const Color.fromARGB(255, 141, 168, 209),
+                            cursorHeight: 20,
+                            validator: (text) {
+                              if (text!.length < 8) {
+                                return "you have to enter 8 char";
+                              } else {
+                                return null;
+                              }
+                            },
+                            //  maxLength: 8,
+                            decoration: InputDecoration(
+                              counterStyle: TextStyle(
+                                color: darkblue,
+                              ),
+                              contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 20),
+                              label: Container(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 14),
+                                child: Text(
+                                  "Password",
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 18.sp,
+                                    fontWeight: FontWeight.bold,
+                                    color: darkblue,
+                                  ),
+                                ),
+                              ),
+                              hintText: "Enter your password",
+                              hintStyle: TextStyle(
+                                color: const Color.fromARGB(255, 141, 168, 209),
+                                fontFamily: 'Montserrat',
+                                fontSize: 12.sp,
+                              ),
+                              //   filled: true,
+                              //    fillColor: lightblue,
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  borderSide: BorderSide(
+                                    color: darkblue,
+                                  )
+                                  //   borderSide: BorderSide.none,
+                                  ),
+                              suffixIcon: IconButton(
+                                icon: Icon(
+                                  icn1
+                                      ? Icons.visibility_off
+                                      : Icons.visibility,
+                                  color: darkblue,
+                                ),
+                                onPressed: () {
+                                  setState(() {
+                                    icn1 = !icn1;
+                                  });
                                 },
-                                keyboardType: TextInputType.visiblePassword,
-                                obscureText: icn1,
-                                cursorColor:
-                                    const Color.fromARGB(255, 141, 168, 209),
-                                cursorHeight: 20,
-                                validator: (text) {
-                                  if (text!.length < 8) {
-                                    return "you have to enter 8 char";
-                                  } else {
-                                    return null;
-                                  }
-                                },
-                                //  maxLength: 8,
-                                decoration: InputDecoration(
-                                    counterStyle: TextStyle(color: darkblue),
-                                    contentPadding: const EdgeInsets.symmetric(
-                                        horizontal: 20, vertical: 20),
-                                    label: Container(
-                                      margin: const EdgeInsets.symmetric(
-                                          horizontal: 14),
-                                      child: Text(
-                                        "Password",
-                                        style: TextStyle(
-                                            fontFamily: 'Montserrat',
-                                            fontSize: 18.sp,
-                                            fontWeight: FontWeight.bold,
-                                            color: darkblue),
-                                      ),
-                                    ),
-                                    hintText: "Enter your password",
-                                    hintStyle: TextStyle(
-                                      color: const Color.fromARGB(
-                                          255, 141, 168, 209),
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 12.sp,
-                                    ),
-                                    //   filled: true,
-                                    //    fillColor: lightblue,
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(30),
-                                        borderSide: BorderSide(color: darkblue)
-                                        //   borderSide: BorderSide.none,
-                                        ),
-                                    suffixIcon: IconButton(
-                                      icon: Icon(
-                                        icn1
-                                            ? Icons.visibility_off
-                                            : Icons.visibility,
-                                        color: darkblue,
-                                      ),
-                                      onPressed: () {
-                                        setState(() {
-                                          icn1 = !icn1;
-                                        });
-                                      },
-                                    ))),
+                              ),
+                            ),
                           ),
-                        ]))),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
               // Padding(
               //   padding: const EdgeInsets.only(left: 200 ),
@@ -209,12 +222,20 @@ class LoginstState extends State<Loginst> {
                   width: 300.w,
                   child: ElevatedButton(
                       style: ButtonStyle(
-                          shape: WidgetStateProperty.all(BeveledRectangleBorder(
-                              borderRadius: BorderRadius.circular(3))),
-                          elevation: WidgetStateProperty.all(10),
-                          shadowColor: WidgetStateProperty.all(Colors.black),
-                          backgroundColor: WidgetStateProperty.all(darkblue),
-                          foregroundColor: WidgetStateProperty.all(lightblue)),
+                        shape: WidgetStateProperty.all(
+                          BeveledRectangleBorder(
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                        ),
+                        elevation: WidgetStateProperty.all(10),
+                        shadowColor: WidgetStateProperty.all(Colors.black),
+                        backgroundColor: WidgetStateProperty.all(
+                          darkblue,
+                        ),
+                        foregroundColor: WidgetStateProperty.all(
+                          lightblue,
+                        ),
+                      ),
                       onPressed: () {
                         setState(() {
                           // loginData();
@@ -225,40 +246,45 @@ class LoginstState extends State<Loginst> {
                 ),
               ),
               SizedBox(
-                  height: height * 0.08,
-                  width: width,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Padding(
-                        padding: EdgeInsets.only(
-                          left: 5,
-                        ),
-                        child: Text(
-                          "Don't have an account?",
-                          style: TextStyle(
-                              fontFamily: 'Montserrat',
-                              color: Color.fromARGB(255, 141, 168, 209),
-                              fontSize: 17),
+                height: height * 0.08,
+                width: width,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(
+                        left: 5,
+                      ),
+                      child: Text(
+                        "Don't have an account?",
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Color.fromARGB(255, 141, 168, 209),
+                          fontSize: 17,
                         ),
                       ),
-                      TextButton(
-                          style: ButtonStyle(
-                            foregroundColor: WidgetStateProperty.all(darkblue),
+                    ),
+                    TextButton(
+                        style: ButtonStyle(
+                          foregroundColor: WidgetStateProperty.all(
+                            darkblue,
                           ),
-                          child: const Text(
-                            "website",
-                            style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold),
+                        ),
+                        child: const Text(
+                          "website",
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
                           ),
-                          onPressed: () {
-                            log("hhfjh");
-                            //  Navigator.of(context).pushNamed('sign up');
-                          })
-                    ],
-                  ))
+                        ),
+                        onPressed: () {
+                          log("hhfjh");
+                          //  Navigator.of(context).pushNamed('sign up');
+                        })
+                  ],
+                ),
+              )
             ],
           ),
         ),

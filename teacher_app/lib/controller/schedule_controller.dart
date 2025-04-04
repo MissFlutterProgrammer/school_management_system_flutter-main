@@ -47,13 +47,17 @@ class ScheduleController extends GetxController {
     update();
 
     scheduleItem.clear();
-    scheduleItem = await RestAPIGet.getschedule(selectedValue);
+    scheduleItem = await RestAPIGet.getschedule(
+      selectedValue,
+    );
 
     isLoading = false;
     update();
   }
 
-  onDropdownChanged(String value) async {
+  onDropdownChanged(
+    String value,
+  ) async {
     if (selectedValue == value) return;
 
     selectedValue = value;
@@ -62,7 +66,9 @@ class ScheduleController extends GetxController {
     update();
 
     scheduleItem.clear();
-    scheduleItem = await RestAPIGet.getschedule(selectedValue);
+    scheduleItem = await RestAPIGet.getschedule(
+      selectedValue,
+    );
 
     isLoading = false;
     update();

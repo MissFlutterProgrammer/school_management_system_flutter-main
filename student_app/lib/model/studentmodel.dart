@@ -16,23 +16,24 @@ class StudentProfile {
   String? createdAt;
   String? updatedAt;
 
-  StudentProfile(
-      {this.id,
-      this.gradeId,
-      this.sectionId,
-      this.username,
-      this.firstName,
-      this.middleName,
-      this.lastName,
-      this.dateOfBirth,
-      this.address,
-      this.phoneNumber,
-      this.bio,
-      this.imageUrl,
-      this.gender,
-      this.type,
-      this.createdAt,
-      this.updatedAt});
+  StudentProfile({
+    this.id,
+    this.gradeId,
+    this.sectionId,
+    this.username,
+    this.firstName,
+    this.middleName,
+    this.lastName,
+    this.dateOfBirth,
+    this.address,
+    this.phoneNumber,
+    this.bio,
+    this.imageUrl,
+    this.gender,
+    this.type,
+    this.createdAt,
+    this.updatedAt,
+  });
 
   StudentProfile.fromJson(Map<String, dynamic> json) {
     id = json['id'];

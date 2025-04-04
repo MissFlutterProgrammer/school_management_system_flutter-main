@@ -4,7 +4,12 @@ class MarkSubModel {
   List<FirstTerm>? firstTerm;
   List<SecondTerm>? secondTerm;
 
-  MarkSubModel({this.status, this.message, this.firstTerm, this.secondTerm});
+  MarkSubModel({
+    this.status,
+    this.message,
+    this.firstTerm,
+    this.secondTerm,
+  });
 
   MarkSubModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];

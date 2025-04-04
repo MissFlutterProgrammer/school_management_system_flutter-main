@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -42,29 +44,36 @@ class Marks extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 30),
                       child: DropdownButton(
-                          iconSize: 35,
-                          iconEnabledColor: darkblue,
-                          elevation: 16,
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 19.sp,
-                            color: darkblue,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          underline: const Text(''),
-                          dropdownColor: lightblue,
-                          borderRadius: BorderRadius.circular(15),
-                          items: markscontroller.schoolyearItems
-                              .map((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              alignment: Alignment.center,
-                              child: Text(value),
-                            );
-                          }).toList(),
-                          value: markscontroller.schoolyear,
-                          onChanged: (value) => markscontroller
-                              .onDropdownChangedSchoolyear('$value')),
+                        iconSize: 35,
+                        iconEnabledColor: darkblue,
+                        elevation: 16,
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 19.sp,
+                          color: darkblue,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        underline: const Text(''),
+                        dropdownColor: lightblue,
+                        borderRadius: BorderRadius.circular(15),
+                        items: markscontroller.schoolyearItems.map((
+                          String value,
+                        ) {
+                          return DropdownMenuItem<String>(
+                            value: value,
+                            alignment: Alignment.center,
+                            child: Text(
+                              value,
+                            ),
+                          );
+                        }).toList(),
+                        value: markscontroller.schoolyear,
+                        onChanged: (
+                          value,
+                        ) =>
+                            markscontroller
+                                .onDropdownChangedSchoolyear('$value'),
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 50),
@@ -75,13 +84,15 @@ class Marks extends StatelessWidget {
                         // isExpanded: true,
                         hint: Align(
                           alignment: Alignment.center,
-                          child: Text('Term',
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 18.sp,
-                                color: darkblue,
-                                fontWeight: FontWeight.bold,
-                              )),
+                          child: Text(
+                            'Term',
+                            style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontSize: 18.sp,
+                              color: darkblue,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                         style: TextStyle(
                           fontFamily: 'Montserrat',
@@ -92,16 +103,22 @@ class Marks extends StatelessWidget {
                         underline: const Text(''),
                         dropdownColor: const Color.fromRGBO(233, 238, 252, 1),
                         borderRadius: BorderRadius.circular(15),
-                        items: markscontroller.termItems.map((String value) {
+                        items: markscontroller.termItems.map((
+                          String value,
+                        ) {
                           return DropdownMenuItem<String>(
                             value: value,
                             alignment: Alignment.center,
-                            child: Text(value),
+                            child: Text(
+                              value,
+                            ),
                           );
                         }).toList(),
 
                         value: markscontroller.term,
-                        onChanged: (value) =>
+                        onChanged: (
+                          value,
+                        ) =>
                             {markscontroller.onDropdownChangedTerm('$value')},
                       ),
                     ),
@@ -121,94 +138,96 @@ class Marks extends StatelessWidget {
                     itemCount: 13,
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
+                        // color: lightblue,
+                        height: 60.h,
+                        width: 500.w,
+                        decoration: BoxDecoration(
+                          color: lightblue,
 
-                          // color: lightblue,
-                          height: 60.h,
-                          width: 500.w,
-                          decoration: BoxDecoration(
-                            color: lightblue,
+                          //  borderRadius: BorderRadius.circular(30),
 
-                            //  borderRadius: BorderRadius.circular(30),
+                          // color: Color.fromRGBO(169, 33, 33, 1),
 
-                            // color: Color.fromRGBO(169, 33, 33, 1),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color.fromARGB(255, 141, 168, 209)
+                                  .withOpacity(0.5),
 
-                            boxShadow: [
-                              BoxShadow(
-                                color: const Color.fromARGB(255, 141, 168, 209)
-                                    .withOpacity(0.5),
+                              spreadRadius: 4,
 
-                                spreadRadius: 4,
+                              //   blurRadius: 5,
 
-                                //   blurRadius: 5,
-
-                                // offset: Offset(0, 3),
+                              // offset: Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 40),
+                              child: Image.asset(
+                                "assets/icons/relativity.png",
+                                height: 40.h,
+                                width: 40.w,
                               ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
-                                child: Image.asset(
-                                  "assets/icons/relativity.png",
-                                  height: 40.h,
-                                  width: 40.w,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 25),
+                              child: TextButton(
+                                child: Text(
+                                  "Math",
+                                  //  "${controllermarks.marks.value!.courseName}",
+                                  style:
+                                      Theme.of(context).textTheme.displayLarge,
                                 ),
+                                onPressed: () {
+                                  Get.toNamed('/subject');
+                                },
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 25),
-                                child: TextButton(
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 55),
+                              child: Container(
+                                height: 35.h,
+                                width: 85.w,
+                                decoration: BoxDecoration(
+                                  color: white,
+
+                                  borderRadius: BorderRadius.circular(30),
+
+                                  // color: Color.fromRGBO(169, 33, 33, 1),
+
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: const Color.fromARGB(
+                                              255, 161, 177, 201)
+                                          .withOpacity(0.5),
+
+                                      // spreadRadius: 4,
+
+                                      blurRadius: 7,
+
+                                      // offset: Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: Center(
                                   child: Text(
-                                    "Math",
-                                    //  "${controllermarks.marks.value!.courseName}",
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .displayLarge,
+                                    "", //"${controllermarks.marks.value!.finalScore}",
+                                    style: TextStyle(
+                                      fontFamily: 'Montserrat',
+                                      color: darkblue,
+                                      fontSize: 23.sp,
+                                      fontWeight: FontWeight.w800,
+                                    ),
                                   ),
-                                  onPressed: () {
-                                    Get.toNamed('/subject');
-                                  },
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 55),
-                                child: Container(
-                                  height: 35.h,
-                                  width: 85.w,
-                                  decoration: BoxDecoration(
-                                    color: white,
-
-                                    borderRadius: BorderRadius.circular(30),
-
-                                    // color: Color.fromRGBO(169, 33, 33, 1),
-
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: const Color.fromARGB(
-                                                255, 161, 177, 201)
-                                            .withOpacity(0.5),
-
-                                        // spreadRadius: 4,
-
-                                        blurRadius: 7,
-
-                                        // offset: Offset(0, 3),
-                                      ),
-                                    ],
-                                  ),
-                                  child: Center(
-                                      child: Text(
-                                          "", //"${controllermarks.marks.value!.finalScore}",
-                                          style: TextStyle(
-                                              fontFamily: 'Montserrat',
-                                              color: darkblue,
-                                              fontSize: 23.sp,
-                                              fontWeight: FontWeight.w800))),
-                                ),
-                              ),
-                            ],
-                          ));
+                            ),
+                          ],
+                        ),
+                      );
                     }),
               ),
             ],

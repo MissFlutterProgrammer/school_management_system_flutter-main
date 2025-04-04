@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
 import '../model/teacher_profile_model.dart';
 import '../services/rest_api_get.dart';
 

@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:teacher_app/model/teachers_model.dart';
 import 'package:teacher_app/services/rest_api_get.dart';
 import 'package:teacher_app/constant/my_colors.dart';
-
 import '../model/grade_model.dart';
 import '../model/student_attendance_model.dart';
 import '../services/rest_api_post.dart';
@@ -77,7 +76,9 @@ class TeachersAttendanceController extends GetxController {
     update();
   }
 
-  void onCourseDropdownChanged(String value) async {
+  void onCourseDropdownChanged(
+    String value,
+  ) async {
     if (courseSelectedValue == value) return;
     courseSelectedValue = value;
     fetchTeachersData();

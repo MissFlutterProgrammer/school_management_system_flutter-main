@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:teacher_app/constant/my_colors.dart';
-
 import 'package:teacher_app/controller/part_of_grid_controller.dart';
 import 'package:teacher_app/screen/assignments.dart';
 import 'package:teacher_app/screen/marks.dart';
@@ -16,12 +15,12 @@ class PartOfGrid extends StatelessWidget {
   final Icon sectionIcon;
 
   const PartOfGrid({
-    Key? key,
+    super.key,
     required this.gradeId,
     required this.sectionId,
     required this.sectionNumber,
     required this.sectionIcon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +132,7 @@ class PartOfGrid extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8),
                     child: SizedBox(
                       width: double.infinity,
                       child: TextButton(
@@ -146,7 +145,7 @@ class PartOfGrid extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8),
                     child: SizedBox(
                       width: double.infinity,
                       child: TextButton(
@@ -161,27 +160,31 @@ class PartOfGrid extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8),
                     child: SizedBox(
                       width: double.infinity,
                       child: TextButton(
                         child: const Text('Assignments'),
                         onPressed: () => {
-                          Get.to(() => const Assignments(),
-                              arguments: [sectionId]),
+                          Get.to(
+                            () => const Assignments(),
+                            arguments: [sectionId],
+                          ),
                         },
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8),
                     child: SizedBox(
                       width: double.infinity,
                       child: TextButton(
                         child: const Text('Posts'),
                         onPressed: () => {
-                          Get.to(() => const ShowPosts(),
-                              arguments: [sectionId]),
+                          Get.to(
+                            () => const ShowPosts(),
+                            arguments: [sectionId],
+                          ),
                         },
                       ),
                     ),
